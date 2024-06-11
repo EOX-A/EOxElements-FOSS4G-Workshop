@@ -1,1 +1,1 @@
-import "https://unpkg.com/@eox/layout";
+// Import the @eox/layout bundle

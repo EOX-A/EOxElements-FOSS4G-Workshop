@@ -3,5 +3,11 @@ body {
   height: 100%;
 }
 /* Make the layout fill the entire page height */
-
+eox-layout {
+  height: 100%;
+}
 /* Give the layout items some basic styling */
+eox-layout-item {
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+}
