@@ -42,3 +42,9 @@ eox-layout-item {
   border-radius: 4px;
 }
 ```
+
+## Result
+
+Your page should look something like this:
+
+![](../screenshots/01.png)
