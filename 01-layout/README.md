@@ -10,7 +10,7 @@ import "https://unpkg.com/@eox/layout";
 
 ## Add HTML
 
-Use the `eox-layout` container element to hold the individual items:
+In [index.html](./index.html), use the `eox-layout` container element to hold the individual items:
 
 ```html
 <eox-layout></eox-layout>
@@ -24,6 +24,7 @@ Add individual `eox-layout-item` elements with `x`, `y`, `w` and `h` attributes 
 
 ## Styling
 
+Add some basic styling to [style.css](./style.css).
 Make the layout fill the entire page height:
 
 ```css
