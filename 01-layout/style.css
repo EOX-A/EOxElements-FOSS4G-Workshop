@@ -1,0 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+eox-layout {
+  height: 100%;
+}
+eox-layout-item {
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+}
