@@ -1,4 +1,4 @@
-# Layout
+# 01: Basic layout using `eox-layout`
 
 ## Import bundle
 
