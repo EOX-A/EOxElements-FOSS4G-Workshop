@@ -20,6 +20,7 @@ Add individual `eox-layout-item` elements with `x`, `y`, `w` and `h` attributes 
 
 ```html
 <eox-layout-item x="0" y="0" w="1" h="1">One</eox-layout-item>
+<eox-layout-item x="1" y="1" w="1" h="1">Two</eox-layout-item>
 ```
 
 ## Styling
