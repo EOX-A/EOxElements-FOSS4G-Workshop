@@ -48,3 +48,7 @@ eox-layout-item {
 Your page should look something like this:
 
 ![](../screenshots/01.png)
+
+Feel free to compare with the [solution folder](./solution/)!
+
+Next, try out [section 02](../02%20eox-map/README.md).
