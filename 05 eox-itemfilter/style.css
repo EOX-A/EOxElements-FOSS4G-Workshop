@@ -1,0 +1,15 @@
+@import url(../assets/global.css);
+
+eox-layout {
+  height: 100%;
+}
+eox-layout-item {
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  /* change the background to white */
+  background: white;
+}
+
+eox-map {
+  height: 100%;
+}
