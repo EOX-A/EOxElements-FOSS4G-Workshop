@@ -1,8 +1,8 @@
 # 01: Basic layout using `eox-layout`
 
-## Import bundle
+## Import package
 
-Import the `@eox/layout` bundle into [main.js](./main.js):
+Import the `@eox/layout` package into [main.js](./main.js):
 
 ```js
 import "https://unpkg.com/@eox/layout";

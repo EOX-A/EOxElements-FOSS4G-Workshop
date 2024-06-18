@@ -8,4 +8,6 @@ eox-layout-item {
   border-radius: 4px;
 }
 
-/* Give the eox-map some height */
+eox-map {
+  height: 100%;
+}
