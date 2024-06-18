@@ -1,7 +1,5 @@
-html,
-body {
-  height: 100%;
-}
+@import url(../../assets/global.css);
+
 /* Make the layout fill the entire page height */
 eox-layout {
   height: 100%;

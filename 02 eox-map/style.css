@@ -1,7 +1,5 @@
-html,
-body {
-  height: 100%;
-}
+@import url(../assets/global.css);
+
 eox-layout {
   height: 100%;
 }

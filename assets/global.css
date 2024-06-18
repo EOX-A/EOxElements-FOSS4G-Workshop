@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  font-family: sans-serif;
+  transition: opacity 0.3s ease-in-out;
+}
+
+:not(:defined) {
+  opacity: 0;
+}
+
+:defined {
+  opacity: 1;
+}
