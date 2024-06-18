@@ -12,7 +12,6 @@ document.querySelector("eox-map").config = {
       type: "Tile",
       properties: {
         id: "s2cloudless",
-        // add layer properties
         title: "Sentinel-2 Cloudless",
       },
       source: {

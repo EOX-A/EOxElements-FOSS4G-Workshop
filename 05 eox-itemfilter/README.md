@@ -14,19 +14,19 @@ In [index.html](./index.html), use the `eox-itemfilter` element inside a new `eo
 
 ```html
 <eox-layout gap="4">
+  <eox-layout-item x="0" y="0" w="2" h="12">
+    <eox-itemfilter></eox-itemfilter>
+  </eox-layout-item>
   <eox-layout-item x="2" y="0" w="6" h="12">
     <eox-map></eox-map>
   </eox-layout-item>
   <eox-layout-item x="8" y="0" w="2" h="4">
     <eox-layercontrol></eox-layercontrol>
   </eox-layout-item>
-  <eox-layout-item x="0" y="0" w="2" h="12">
-    <eox-itemfilter></eox-itemfilter>
-  </eox-layout-item>
 </eox-layout>
 ```
 
-## Itemfilter items
+## `eox-itemfilter` items
 
 To add a selectable list of items, set the `items` property of `eox-itemfilter`:
 
@@ -49,7 +49,7 @@ document.querySelector("eox-itemfilter").items = [
 
 This renders a selectable list of items.
 
-## Itemfilter config
+## `eox-itemfilter` config
 
 Let's add a `config` property to define a filter and a callback function to trigger when an item is selected:
 
@@ -65,6 +65,8 @@ document.querySelector("eox-itemfilter").config = {
   onSelect: (item) => alert(`Selected: ${item.title}`),
 };
 ```
+
+For a full list of available config properties, please have a look at the [`eox-itemfilter` docs](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-itemfilter--docs).
 
 ## Real-world example
 

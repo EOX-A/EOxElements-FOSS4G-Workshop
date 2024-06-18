@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EOxElements Workshop 05</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- restructure the layout -->
+    <eox-layout gap="4">
+      <eox-layout-item x="0" y="0" w="2" h="8">
+        <eox-itemfilter></eox-itemfilter>
+      </eox-layout-item>
+      <eox-layout-item x="2" y="0" w="6" h="12">
+        <eox-map></eox-map>
+      </eox-layout-item>
+      <eox-layout-item x="0" y="8" w="2" h="4">
+        <eox-layercontrol></eox-layercontrol>
+      </eox-layout-item>
+      <eox-layout-item x="8" y="0" w="4" h="12">
+        <!-- add eox-stacinfo -->
+        <eox-stacinfo></eox-stacinfo>
+      </eox-layout-item>
+    </eox-layout>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

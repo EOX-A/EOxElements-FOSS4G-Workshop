@@ -6,7 +6,6 @@ eox-layout {
 eox-layout-item {
   border: 1px solid darkgrey;
   border-radius: 4px;
-  /* change the background to white */
   background: white;
 }
 
