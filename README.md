@@ -36,6 +36,8 @@ The goal of this workshop is to introduce participants to EOxElements and provid
    - Explanation of the functionalities of each component and how they interact.
    - Examples of use cases where these components can be effectively utilized.
 
+   📖 Have a look at the [Introduction](./INTRODUCTION.md)!
+
 2. **Introduction to Custom Elements (Web Components) and Their Benefits (5 minutes)**
 
    - Briefly explain the concept of custom elements (web components) and their role in modern web development.
@@ -46,6 +48,8 @@ The goal of this workshop is to introduce participants to EOxElements and provid
 
    - Show participants where to find the official documentation and examples.
    - Walk through a basic example to demonstrate how EOxElements works.
+
+   🖼️ See the [EOxElements Documentation and Examples](https://eox-a.github.io/EOxElements/).
 
 #### **II. Hands-On Session: Building a Simple Map Application (70 minutes)**
 
