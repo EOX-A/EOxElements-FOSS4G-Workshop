@@ -51,6 +51,14 @@ Object.assign(document.querySelector("eox-stacinfo"), {
 
 Please consult the [`eox-stacinfo` docs](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-stacinfo--docs) for more information.
 
+## Styling
+
+In case the content inside an `eox-layout-item` is too long for the container, you can add some css to mitigate that:
+
+```css
+overflow-y: auto;
+```
+
 ## Result
 
 Your page should look something like this:
