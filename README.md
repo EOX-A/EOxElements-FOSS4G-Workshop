@@ -53,6 +53,13 @@ The goal of this workshop is to introduce participants to EOxElements and provid
 
 #### **II. Hands-On Session: Building a Simple Map Application (70 minutes)**
 
+<details>
+<summary>Here's a preview of what the end result of the hands-on session will look like!</summary>
+<img src="./screenshots/06.png">
+</details>
+
+The following sections will guide the participants through the individual steps to achieve the end result.
+
 1. **Creating a Basic Layout (5 minutes)**
 
    - Guide participants through creating a simple HTML file.
