@@ -2,7 +2,7 @@
 
 ## Import package
 
-In order to use advanced layers and sources in our `eox-map` (all OL `layer` and `source` types, plus some additional custom ones - see [documentation](<(https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-map--docs)>)), we need more than just the base bundle.
+In order to use advanced layers and sources in our `eox-map` (all OL `layer` and `source` types, plus some additional custom ones - see [documentation](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-map--docs), we need more than just the base bundle.
 Additionally to importing `@eox/map`, now also import the `@eox/map/dist/eox-map-advanced-layers-and-sources.js` package into [main.js](./main.js):
 
 ```js
