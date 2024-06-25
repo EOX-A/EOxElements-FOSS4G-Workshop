@@ -59,7 +59,7 @@ document.querySelector("eox-map").center = [125, -30];
 Note: in real-world usecases, you'd probably not want to set these properties separately, but rather use the `config` object (see [example](https://eox-a.github.io/EOxElements/?path=/story/elements-eox-map--config-object)) or via e.g. the `zoomExtent`:
 
 ```js
-document.querySelector("eox-map").config: {
+document.querySelector("eox-map").config = {
   layers: [...],
   view: {
     zoomExtent: ...
