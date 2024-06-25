@@ -19,6 +19,13 @@ Some of the elements are released as a rather stable `v1.0.0`, but most of them 
 ## What are some example uses?
 
 ![](./screenshots/00-usecase1.png)
+[RACE Dashboard](https://race.esa.int)
+
 ![](./screenshots/00-usecase2.png)
+[Open Science Catalog](https://opensciencedata.esa.int)
+
 ![](./screenshots/00-usecase3.png)
+[Agri App](https://agri.demo.hub.eox.at/)
+
 ![](./screenshots/00-usecase4.png)
+[GTIF](https://gtif.esa.int)
