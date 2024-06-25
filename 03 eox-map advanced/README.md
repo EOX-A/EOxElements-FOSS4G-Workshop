@@ -41,7 +41,7 @@ This custom layer creates a layer (group) from e.g. a STAC collection. Powered b
   properties: {
     id: "stacLayer",
   },
-  url: "https://tamn.snapplanet.io/search?bbox=125.727770,-29.514858,133.412707,-23.673395&collections=S2",
+  url: "https://tamn.snapplanet.io/search?bbox=125.727770,-29.514858,133.412707,-23.673395&collections=S2&datetime=2024-06-18T00:00:00Z",
   displayPreview: true,
 },
 ```
