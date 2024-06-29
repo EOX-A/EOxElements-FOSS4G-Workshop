@@ -55,6 +55,14 @@ In order to better display the map layers in the layercontrol, let's add some la
 
 Please see the [EOxElements docs](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-layercontrol--docs) for more properties and examples for `eox-layercontrol`.
 
+Once the layercontrol is working, you can also try the following:
+
+- view the description of a layer
+- change the opacity of a layer
+- try to change the visual order of layers
+- try to hide one of the layers from the layercontrol
+- configure the layercontrol to allow adding external layers
+
 ## Result
 
 Your page should look something like this:
