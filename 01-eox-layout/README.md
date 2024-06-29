@@ -51,4 +51,4 @@ Your page should look something like this:
 
 Feel free to compare with the [solution folder](./solution/)!
 
-Next, try out [section 02](../02%20eox-map/README.md).
+Next, try out [section 02](../02-eox-map/README.md).

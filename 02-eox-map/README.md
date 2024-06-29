@@ -75,4 +75,4 @@ Your page should look something like this:
 
 Feel free to compare with the [solution folder](./solution/)!
 
-Next, try out [section 03](../03%20eox-map%20advanced/README.md).
+Next, try out [section 03](../03-eox-map-advanced/README.md).

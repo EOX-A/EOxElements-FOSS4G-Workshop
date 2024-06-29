@@ -76,4 +76,4 @@ Your page should look something like this (if you zoom to Australia):
 
 Feel free to compare with the [solution folder](./solution/)!
 
-Next, try out [section 04](../04%20eox-layercontrol/README.md).
+Next, try out [section 04](../04-eox-layercontrol/README.md).

@@ -66,40 +66,40 @@ The following sections will guide the participants through the individual steps 
    - Include necessary EOxElements scripts and styles.
    - Initialize a basic layout using EOxElements components (`eox-layout` and `eox-layout-item`).
 
-   💻 Follow along in [section 01](./01%20eox-layout/).
+   💻 Follow along in [section 01](./01-eox-layout/).
 
 2. **Creating a Basic Map (10 minutes)**
 
    - Initialize a basic map using `eox-map`.
 
-   💻 Follow along in [section 02](./02%20eox-map/).
+   💻 Follow along in [section 02](./02-eox-map/).
 
 3. **Adding Advanced Layers (10 minutes)**
 
    - Demonstrate how to add different types of layers (e.g., STAC, WMTS from Capabilities).
 
-   💻 Follow along in [section 03](./03%20eox-map%20advanced/).
+   💻 Follow along in [section 03](./03-eox-map-advanced/).
 
 4. **Interactivity and Controls (15 minutes)**
 
    - Introduce `eox-layercontrol` and show how to customize its appearance and behavior.
    - Show how to configure layer properties (e.g., visibility, opacity).
 
-   💻 Follow along in [section 04](./04%20eox-layercontrol/).
+   💻 Follow along in [section 04](./04-eox-layercontrol/).
 
 5. **Filtering and Selecting Items based on STAC Data (15 minutes)**
 
    - Introduce `eox-itemfilter` and show how to customize its appearance and behavior, and let the map react to a selection.
    - Demonstrate how to access a STAC collection manually.
 
-   💻 Follow along in [section 05](./05%20eox-itemfilter/).
+   💻 Follow along in [section 05](./05-eox-itemfilter/).
 
 6. **Accessing and Displaying STAC Data (15 minutes)**
 
    - Show how to fetch and parse STAC metadata using `eox-stacinfo`.
    - Guide participants through the process of displaying STAC metadata in the provided slots.
 
-   💻 Follow along in [section 06](./06%20eox-stacinfo/).
+   💻 Follow along in [section 06](./06-eox-stacinfo/).
 
 #### **III. Introduction to eodash (5 minutes)**
 

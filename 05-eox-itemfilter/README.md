@@ -155,4 +155,4 @@ Your page should look something like this:
 
 Feel free to compare with the [solution folder](./solution/)!
 
-Next, try out [section 06](../06%20eox-stacinfo/README.md).
+Next, try out [section 06](../06-eox-stacinfo/README.md).

@@ -63,4 +63,4 @@ Your page should look something like this:
 
 Feel free to compare with the [solution folder](./solution/)!
 
-Next, try out [section 05](../05%20eox-itemfilter/README.md).
+Next, try out [section 05](../05-eox-itemfilter/README.md).
