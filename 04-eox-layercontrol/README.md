@@ -1,5 +1,7 @@
 # 04: Using `eox-layercontrol`
 
+Once we add more layers to the map, the `eox-layercontrol` helps managing them. This section introduces you to a basic setup of the layercontrol, plus some layer properties that changes their appearance and behavior inside the control.
+
 ## Import package
 
 Import the `@eox/layercontrol` package into [main.js](./main.js):

@@ -4,6 +4,22 @@ import "https://unpkg.com/@eox/map/dist/eox-map-advanced-layers-and-sources.js";
 import "https://unpkg.com/@eox/map";
 
 document.querySelector("eox-map").config = {
+  controls: {
+    Zoom: {},
+    OverviewMap: {
+      layers: [
+        {
+          type: "Tile",
+          properties: {
+            id: "overviewMap",
+          },
+          source: {
+            type: "OSM",
+          },
+        },
+      ],
+    },
+  },
   layers: [
     {
       type: "STAC",

@@ -1,5 +1,7 @@
 # 05: Using `eox-itemfilter`
 
+This section introduces you to `eox-itemfilter`, which comes in handy when having to filter long lists of data items. After a simple example, you will see how to set up more filters and a callback function when one of the results is selected.
+
 ## Import package
 
 Import the `@eox/itemfilter` package into [main.js](./main.js):

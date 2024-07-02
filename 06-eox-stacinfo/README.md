@@ -1,5 +1,7 @@
 # 06: Using `eox-stacinfo`
 
+When working with STAC, it is often times needed to display the contents of a JSON file in a nicely formatted manner. This section will introduce you to `eox-stacinfo` and some basic configuration.
+
 ## Import package
 
 Import the `@eox/stacinfo` package into [main.js](./main.js):

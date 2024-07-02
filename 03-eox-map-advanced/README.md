@@ -1,5 +1,7 @@
 # 03: Advanced usage of `eox-map`
 
+This section continues with the map element, diving deeper in advanced layers and sources, configuring the view, and adding controls.
+
 ## Import package
 
 In order to use advanced layers and sources in our `eox-map` (all OL `layer` and `source` types, plus some additional custom ones - see [documentation](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-map--docs), we need more than just the base bundle.
@@ -67,6 +69,18 @@ document.querySelector("eox-map").config = {
 }
 
 ```
+
+### Adding controls
+
+To add some map controls, add the `controls` object inside `config`:
+
+```js
+controls: {
+  Zoom: {},
+},
+```
+
+It supports all the controls as described in the [OpenLayers docs](https://openlayers.org/en/latest/apidoc/module-ol_control_Control-Control.html). Initializing a control with an empty object adds it with default values, but you can pass more properties inside to customize it. Try adding an `OverviewMap` control and set its `layers` property (using the same syntax as for the "main" map)!
 
 ## Result
 

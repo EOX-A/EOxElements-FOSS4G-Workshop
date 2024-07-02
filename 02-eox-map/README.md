@@ -1,5 +1,7 @@
 # 02: Using `eox-map`
 
+This section will introduce you to `@eox/map`, one of the main building blocks of any geospatial UI. This map element is based on the popular JS library [OpenLayers](https://github.com/openlayers/openlayers) and adds a layer of convenience plus additional functionality. By the end of this section, you will have created a map with an OSM layer and a vector layer.
+
 ## Import package
 
 Import the `@eox/map` package into [main.js](./main.js):

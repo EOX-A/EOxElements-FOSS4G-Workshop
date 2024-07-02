@@ -1,5 +1,7 @@
 # 01: Basic layout using `eox-layout`
 
+Let's get started! In this section you're going to bootstrap a simple layout, based on a 12x12 grid. We won't add any content yet, and will adapt this layout in the following sections.
+
 ## Import package
 
 Import the `@eox/layout` package into [main.js](./main.js):
