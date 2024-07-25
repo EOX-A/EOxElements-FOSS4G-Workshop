@@ -17,49 +17,20 @@ Object.assign(eoxStacinfo, {
 });
 
 Object.assign(document.querySelector("eox-itemfilter"), {
-  config: {
-    filterProperties: [
-      {
-        keys: ["title"],
-        title: "Search",
-        type: "text",
-        expanded: true,
-      },
-      {
-        key: "themes",
-        title: "Theme",
-        type: "multiselect",
-        expanded: true,
-      },
-    ],
-    onSelect: (item) => {
-      const eoxMap = document.querySelector("eox-map");
-      fetch(item.stac)
-        .then((response) => response.json())
-        .then((json) => {
-          const wmsLink = json.links.find((l) => l.rel === "wms");
-          eoxMap.layers = [
-            {
-              type: "Tile",
-              properties: {
-                id: item.id,
-                title: item.title,
-              },
-              source: {
-                type: "TileWMS",
-                url: wmsLink.href,
-                params: {
-                  LAYERS: wmsLink["wms:layers"],
-                },
-              },
-            },
-            ...eoxMap.layers,
-          ];
-        });
-      // set the `for` property of eox-stacinfo
-      eoxStacinfo.for = item.stac;
+  filterProperties: [
+    {
+      keys: ["title"],
+      title: "Search",
+      type: "text",
+      expanded: true,
     },
-  },
+    {
+      key: "themes",
+      title: "Theme",
+      type: "multiselect",
+      expanded: true,
+    },
+  ],
   items: [
     {
       title: "Global Temperature",
@@ -98,3 +69,32 @@ document.querySelector("eox-map").config = {
     },
   ],
 };
+
+document.querySelector("eox-itemfilter").addEventListener("select", (event) => {
+  const item = event.detail;
+  const eoxMap = document.querySelector("eox-map");
+  fetch(item.stac)
+    .then((response) => response.json())
+    .then((json) => {
+      const wmsLink = json.links.find((l) => l.rel === "wms");
+      eoxMap.layers = [
+        {
+          type: "Tile",
+          properties: {
+            id: item.id,
+            title: item.title,
+          },
+          source: {
+            type: "TileWMS",
+            url: wmsLink.href,
+            params: {
+              LAYERS: wmsLink["wms:layers"],
+            },
+          },
+        },
+        ...eoxMap.layers,
+      ];
+    });
+  // set the `for` property of eox-stacinfo
+  eoxStacinfo.for = item.stac;
+});

@@ -7,50 +7,20 @@ import "https://unpkg.com/@eox/itemfilter";
 
 // Add config and items for eox-itemfilter
 Object.assign(document.querySelector("eox-itemfilter"), {
-  config: {
-    filterProperties: [
-      {
-        keys: ["title"],
-        title: "Search",
-        type: "text",
-        expanded: true,
-      },
-      {
-        key: "themes",
-        title: "Theme",
-        type: "multiselect",
-        expanded: true,
-      },
-    ],
-    onSelect: (item) => {
-      const eoxMap = document.querySelector("eox-map");
-      // fetch the STAC collection
-      fetch(item.stac)
-        .then((response) => response.json())
-        .then((json) => {
-          // find the link with `rel` "wms"
-          const wmsLink = json.links.find((l) => l.rel === "wms");
-          // push the new layer definition to the eox-map layers
-          eoxMap.layers = [
-            {
-              type: "Tile",
-              properties: {
-                id: item.id,
-                title: item.title,
-              },
-              source: {
-                type: "TileWMS",
-                url: wmsLink.href,
-                params: {
-                  LAYERS: wmsLink["wms:layers"],
-                },
-              },
-            },
-            ...eoxMap.layers,
-          ];
-        });
+  filterProperties: [
+    {
+      keys: ["title"],
+      title: "Search",
+      type: "text",
+      expanded: true,
     },
-  },
+    {
+      key: "themes",
+      title: "Theme",
+      type: "multiselect",
+      expanded: true,
+    },
+  ],
   items: [
     {
       title: "Global Temperature",
@@ -90,3 +60,33 @@ document.querySelector("eox-map").config = {
     },
   ],
 };
+
+document.querySelector("eox-itemfilter").addEventListener("select", (event) => {
+  const item = event.detail;
+  const eoxMap = document.querySelector("eox-map");
+  // fetch the STAC collection
+  fetch(item.stac)
+    .then((response) => response.json())
+    .then((json) => {
+      // find the link with `rel` "wms"
+      const wmsLink = json.links.find((l) => l.rel === "wms");
+      // push the new layer definition to the eox-map layers
+      eoxMap.layers = [
+        {
+          type: "Tile",
+          properties: {
+            id: item.id,
+            title: item.title,
+          },
+          source: {
+            type: "TileWMS",
+            url: wmsLink.href,
+            params: {
+              LAYERS: wmsLink["wms:layers"],
+            },
+          },
+        },
+        ...eoxMap.layers,
+      ];
+    });
+});

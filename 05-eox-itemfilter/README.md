@@ -53,19 +53,21 @@ This renders a selectable list of items.
 
 ## `eox-itemfilter` config
 
-Let's add a `config` property to define a filter and a callback function to trigger when an item is selected:
+Let's add a `filterProperties` property to define a filter and add an event listener function to run when an item is selected:
 
 ```js
-document.querySelector("eox-itemfilter").config = {
-  filterProperties: [
-    {
-      key: "themes",
-      title: "Theme",
-      type: "multiselect",
-    },
-  ],
-  onSelect: (item) => alert(`Selected: ${item.title}`),
-};
+document.querySelector("eox-itemfilter").filterProperties = [
+  {
+    key: "themes",
+    title: "Theme",
+    type: "multiselect",
+  },
+];
+document
+  .querySelector("eox-itemfilter")
+  .addEventListener("select", (event) =>
+    alert(`Selected: ${event.detail.title}`)
+  );
 ```
 
 For a full list of available config properties, please have a look at the [`eox-itemfilter` docs](https://eox-a.github.io/EOxElements/?path=/docs/elements-eox-itemfilter--docs).
@@ -79,51 +81,21 @@ For a more realistic and useful usecase, try the following config and items:
 
 ```js
 Object.assign(document.querySelector("eox-itemfilter"), {
-  config: {
-    filterProperties: [
-      // added full-text search filter
-      {
-        keys: ["title"],
-        title: "Search",
-        type: "text",
-        expanded: true,
-      },
-      {
-        key: "themes",
-        title: "Theme",
-        type: "multiselect",
-        expanded: true,
-      },
-    ],
-    onSelect: (item) => {
-      const eoxMap = document.querySelector("eox-map");
-      // fetch the STAC collection
-      fetch(item.stac)
-        .then((response) => response.json())
-        .then((json) => {
-          // find the link with `rel` "wms"
-          const wmsLink = json.links.find((l) => l.rel === "wms");
-          // push the new layer definition to the eox-map layers
-          eoxMap.layers = [
-            {
-              type: "Tile",
-              properties: {
-                id: item.id,
-                title: item.title,
-              },
-              source: {
-                type: "TileWMS",
-                url: wmsLink.href,
-                params: {
-                  LAYERS: wmsLink["wms:layers"],
-                },
-              },
-            },
-            ...eoxMap.layers,
-          ];
-        });
+  filterProperties: [
+    // added full-text search filter
+    {
+      keys: ["title"],
+      title: "Search",
+      type: "text",
+      expanded: true,
     },
-  },
+    {
+      key: "themes",
+      title: "Theme",
+      type: "multiselect",
+      expanded: true,
+    },
+  ],
   items: [
     {
       title: "Global Temperature",
@@ -144,6 +116,35 @@ Object.assign(document.querySelector("eox-itemfilter"), {
       stac: "https://eurodatacube.github.io/eodash-catalog/RACE/vessel_density/vessel_density_all/collection.json",
     },
   ],
+});
+document.querySelector("eox-itemfilter").addEventListener("select", (event) => {
+  const item = event.detail;
+  const eoxMap = document.querySelector("eox-map");
+  // fetch the STAC collection
+  fetch(item.stac)
+    .then((response) => response.json())
+    .then((json) => {
+      // find the link with `rel` "wms"
+      const wmsLink = json.links.find((l) => l.rel === "wms");
+      // push the new layer definition to the eox-map layers
+      eoxMap.layers = [
+        {
+          type: "Tile",
+          properties: {
+            id: item.id,
+            title: item.title,
+          },
+          source: {
+            type: "TileWMS",
+            url: wmsLink.href,
+            params: {
+              LAYERS: wmsLink["wms:layers"],
+            },
+          },
+        },
+        ...eoxMap.layers,
+      ];
+    });
 });
 ```
 
