@@ -7,7 +7,7 @@ This section introduces you to `eox-itemfilter`, which comes in handy when havin
 Import the `@eox/itemfilter` package into [main.js](./main.js):
 
 ```js
-import "https://unpkg.com/@eox/itemfilter";
+import "https://unpkg.com/@eox/itemfilter/dist/eox-itemfilter.js";
 ```
 
 ## Add HTML

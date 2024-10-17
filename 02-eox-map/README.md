@@ -7,7 +7,7 @@ This section will introduce you to `@eox/map`, one of the main building blocks o
 Import the `@eox/map` package into [main.js](./main.js):
 
 ```js
-import "https://unpkg.com/@eox/map";
+import "https://unpkg.com/@eox/map/dist/eox-map.js";
 ```
 
 ## Add HTML

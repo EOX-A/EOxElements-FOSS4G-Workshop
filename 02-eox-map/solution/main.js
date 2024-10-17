@@ -1,6 +1,6 @@
-import "https://unpkg.com/@eox/layout";
+import "https://unpkg.com/@eox/layout/dist/eox-layout.js";
 // Import the @eox/map package
-import "https://unpkg.com/@eox/map";
+import "https://unpkg.com/@eox/map/dist/eox-map.js";
 
 // Set the layers property of the eox-map
 document.querySelector("eox-map").layers = [

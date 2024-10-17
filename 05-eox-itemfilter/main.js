@@ -1,7 +1,7 @@
-import "https://unpkg.com/@eox/layout";
+import "https://unpkg.com/@eox/layout/dist/eox-layout.js";
 import "https://unpkg.com/@eox/map/dist/eox-map-advanced-layers-and-sources.js";
-import "https://unpkg.com/@eox/map";
-import "https://unpkg.com/@eox/layercontrol";
+import "https://unpkg.com/@eox/map/dist/eox-map.js";
+import "https://unpkg.com/@eox/layercontrol/dist/eox-layercontrol.js";
 // Import the @eox/itemfilter package
 
 // Add config and items for eox-itemfilter

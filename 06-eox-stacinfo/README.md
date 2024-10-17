@@ -7,7 +7,7 @@ When working with STAC, it is often times needed to display the contents of a JS
 Import the `@eox/stacinfo` package into [main.js](./main.js):
 
 ```js
-import "https://unpkg.com/@eox/stacinfo";
+import "https://unpkg.com/@eox/stacinfo/dist/eox-stacinfo.js";
 ```
 
 ## Add HTML

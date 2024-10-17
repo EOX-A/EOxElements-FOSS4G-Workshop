@@ -7,7 +7,7 @@ Once we add more layers to the map, the `eox-layercontrol` helps managing them. 
 Import the `@eox/layercontrol` package into [main.js](./main.js):
 
 ```js
-import "https://unpkg.com/@eox/layercontrol";
+import "https://unpkg.com/@eox/layercontrol/dist/eox-layercontrol.js";
 ```
 
 ## Add HTML

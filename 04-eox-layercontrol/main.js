@@ -1,6 +1,6 @@
-import "https://unpkg.com/@eox/layout";
+import "https://unpkg.com/@eox/layout/dist/eox-layout.js";
 import "https://unpkg.com/@eox/map/dist/eox-map-advanced-layers-and-sources.js";
-import "https://unpkg.com/@eox/map";
+import "https://unpkg.com/@eox/map/dist/eox-map.js";
 // Import the @eox/layercontrol package
 
 document.querySelector("eox-map").config = {

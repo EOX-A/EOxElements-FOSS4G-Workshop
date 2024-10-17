@@ -7,7 +7,7 @@ Let's get started! In this section you're going to bootstrap a simple layout, ba
 Import the `@eox/layout` package into [main.js](./main.js):
 
 ```js
-import "https://unpkg.com/@eox/layout";
+import "https://unpkg.com/@eox/layout/dist/eox-layout.js";
 ```
 
 ## Add HTML
